@@ -27,11 +27,6 @@ jobs:
   docs:
     uses: swift-institute/.github/.github/workflows/swift-docs.yml@main
     with:
-      umbrella-module: Matrix_Primitives
-      umbrella-display-name: "Matrix Primitives"
-      umbrella-bundle-id: "swift-matrix-primitives.Matrix-Primitives"
-      umbrella-docc-path: "Sources/Matrix Primitives/Matrix Primitives.docc"
-      exclude-modules: ""
       enable-private-repos: true
     secrets:
       PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
