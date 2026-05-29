@@ -18,7 +18,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(path: "../swift-algebra-linear-primitives"),
+        .package(path: "../swift-linear-primitives"),
         .package(path: "../swift-vector-primitives"),
         .package(path: "../swift-dimension-primitives"),
         .package(path: "../swift-index-primitives"),
@@ -27,7 +27,7 @@ let package = Package(
         .target(
             name: "Matrix Primitives",
             dependencies: [
-                .product(name: "Algebra Linear Primitives", package: "swift-algebra-linear-primitives"),
+                .product(name: "Linear Primitives", package: "swift-linear-primitives"),
                 .product(name: "Vector Primitives", package: "swift-vector-primitives"),
                 .product(name: "Dimension Primitives", package: "swift-dimension-primitives"),
                 .product(name: "Index Primitives", package: "swift-index-primitives"),
