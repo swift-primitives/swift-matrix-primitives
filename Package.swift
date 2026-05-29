@@ -18,10 +18,10 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(path: "../swift-linear-primitives"),
-        .package(path: "../swift-vector-primitives"),
-        .package(path: "../swift-dimension-primitives"),
-        .package(path: "../swift-index-primitives"),
+        .package(url: "https://github.com/swift-primitives/swift-linear-primitives.git", branch: "main"),
+        .package(url: "https://github.com/swift-primitives/swift-vector-primitives.git", branch: "main"),
+        .package(url: "https://github.com/swift-primitives/swift-dimension-primitives.git", branch: "main"),
+        .package(url: "https://github.com/swift-primitives/swift-index-primitives.git", branch: "main"),
     ],
     targets: [
         .target(
