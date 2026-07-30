@@ -33,6 +33,12 @@ let package = Package(
                 .product(name: "Index Primitives", package: "swift-index-primitives"),
             ]
         ),
+        .testTarget(
+            name: "Matrix Primitives Tests",
+            dependencies: [
+                "Matrix Primitives",
+            ]
+        ),
     ],
     swiftLanguageModes: [.v6]
 )
