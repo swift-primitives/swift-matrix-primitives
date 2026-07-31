@@ -13,9 +13,15 @@ import Testing
 
 @testable import Matrix_Primitives
 
-@Suite
-struct MatrixTests {
+extension Matrix {
+    @Suite struct Tests {
+        @Suite struct Unit {}
+        @Suite struct `Edge Case` {}
+        @Suite struct Integration {}
+    }
+}
 
+extension Matrix.Tests.Unit {
     @Test
     func `Matrix namespace is an uninhabited enum`() {
         // Matrix is a caseless namespace enum; this smoke test pins the module
